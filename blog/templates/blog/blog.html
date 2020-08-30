@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167548724-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167548724-2');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Landpal blog, learn more about the housing market, home prices, and how to rent any home you choose.">
+  <meta name="author" content="RB Companies LLC">
+
+  <title>Landpal - Blog</title>
+
+  <!--Favicons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'homepage/images/apple-touch-icon.png' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'homepage/images/favicon-32x32.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'homepage/images/favicon-16x16.png' %}">
+  <link rel="manifest" href="{% static 'homepage/images/site.webmanifest' %}">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="{% static 'blog/css/bloghomestyles.css' %}" media="screen and (min-device-width: 600px)">
+  <link rel="stylesheet" href="{% static 'blog/css/bloghomestylesmobile.css' %}" media="screen and (max-device-width: 600px)">
+
+</head>
+
+<body>
+
+  <header class="masthead mb-auto">
+    <div class="container">
+
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/about">About</a>
+        <a class="nav-link" href="/contact">Contact</a>
+        <a class="nav-link active" href="/blog">Blog</a>
+      </nav>
+    </div>
+    <div class="logo">
+      <img src="{% static '/homepage/images/landpal_logo.png' %}" width="390" height="180">
+    </div> 
+  </header>
+
+  <!-- Page Content -->
+  <div class="container mainstuff">
+
+    <div class="">
+      <h1 class="heading"> Coming Soon </h1>
+
+      <!-- Blog Entries Column -->
+<!--       <div class="">
+
+        <div class="card mb-4">
+          <img class="card-img-top" src="{% static '/blog/images/crawlspace.png' %}" alt="An inspector performing a crawl space check." width="300">
+          <div class="card-body">
+            <h2 class="card-title">The Definitive Guide to Home Inspections</h2>
+            <p class="card-text">All your questions about home inspections answered. First timers look no further. By the end of this post, you'll have a good understanding of how much a home inspection costs, what makes an accurate home inspection, and what a home inspector looks for.</p>
+            <a href="post_3" class="btn btn-primary">Read More &rarr;</a>
+          </div>
+          <div class="card-footer text-muted">
+            Posted on May 30, 2020
+          </div>
+        </div> -->
+
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5">
+    <div class="container">
+      <p class="m-0 text-center">&copy; RBCo 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167548724-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-167548724-2');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Free and instant home inspection quote form.">
+    <meta name="author" content="RB Companies, LLC">
+    <title>Landpal Rental Quote</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <meta name="theme-color" content="#563d7c">
+      <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'homepage/images/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'homepage/images/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'homepage/images/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'homepage/images/site.webmanifest' %}">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'rfq/css/quotestyles.css' %}" media="screen and (min-device-width: 600px)">
+    <link rel="stylesheet" href="{% static 'rfq/css/quotestylesmobile.css' %}" media="screen and (max-device-width: 600px)">
+
+  </head>
+  <body class="bg-light">
+    <div class="container">
+
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="/about">About</a>
+            <a class="nav-link" href="/contact">Contact</a>
+            <a class="nav-link" href="/blog">Blog</a>
+
+
+          </nav>
+        </div>
+      </header>
+
+  <div class="py-5 text-center">
+  	<a href="{% url 'homepage:index' %}">
+  	<img class= "pic1" src="{% static 'homepage/images/landpal_logo.png' %}" alt="" width="390" height="180">
+  	</a>
+  </div> 
+
+  <h3 class="lead-heading"> Your monthly rent at {{ quote.address }}: ${{ quote.rentquote }}/month </h3>
+  <hr>
+  <h4> ...What's next? </h4> <br>
+
+  <div class="container">
+      <div class="row oneline">
+        <div class="col-md-4 bordered">
+          <div class="boxbackground">
+            <h2 class="col-center list-heading-text">1. Background Check</h2>
+            <p>We'll run a quick background check to make sure there's a good fit. No hard credit pulls. 
+            </p>
+          </div>
+          <img class="pic" src="{% static 'rfq/images/checklist.png' %}" width="230" height="230">
+        </div>
+        <div class="col-md-4 bordered">
+          <div class="boxbackground">
+            <h2 class="col-center list-heading-text">2. Sign Contingent Lease</h2>
+            <p>We'll have your leasing paperwork ready to go.</p>
+          </div>
+          <img class="pic handshake" src="{% static 'rfq/images/handshake.png' %}" width="220" height="220">
+        </div>
+        <div class="col-md-4 bordered">
+          <div class="boxbackground">
+            <h2 class="col-center list-heading-text">3. Close and Move In!</h2>
+            <p>If the home seller accepts our offer, we'll take care of all the closing headaches and get you moving into the rental home of your dreams!</p> 
+          </div>
+          <img class="pic" src="{% static 'rfq/images/moving.png' %}" width="200" height="200">
+        </div>
+      </div>
+  </div>
+  <br><br>
+  <!-- Start Form  -->
+
+  <form action="{% url 'rfq:success' %}" method="post" class="needs-validation" novalidate>
+  {% csrf_token %}
+    <input type="hidden" name="quote_id" value="{{ quote.id }}"/> 
+    <div class="btn-middle">
+      <button class="btn btn-primary" type="submit">Proceed</button> 
+    </div>
+  </form>
+
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2020 RBCo</p>
+    <!--
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="{% url 'homepage:index' %}">Home</a></li>
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>-->
+  </footer>
+</div>
+
+<!-- 
+Insert bootstraps JS dependencies -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
