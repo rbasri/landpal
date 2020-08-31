@@ -14,7 +14,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="The about page tells users how landpal works to place them in the rental home of their dreams.">
+    <meta name="description" content="Learn about how landpal works to place them in the rental home of their dreams.">
     <meta name="author" content="RB Companies, LLC">
     <title>Landpal - Learn More About Us</title>
 
@@ -29,7 +29,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'about/css/aboutstyles.css' %}" media="screen and (min-device-width: 600px)">
-    <link rel="stylesheet" href="{% static 'about/css/aboutstylesmobile.css' %}" media="screen and (max-device-width: 600px)">
+    <link rel="stylesheet" href="{% static 'about/css/aboutstylesmobiletest.css' %}" media="screen and (max-device-width: 600px)">
 
     <meta name="theme-color" content="#563d7c">
 
@@ -56,32 +56,31 @@
       </div>
     </div>
 
-    <div class="container1">
-<!--       <div class="picturehere">
-      	<img src="{% static 'about/images/homecloudsmall.png' %}" class="pic1">
-      </div> -->
-      <div class="notebox first"><br><br><br><br><br>
-      	<p class="dotted"><b>Not all neighborhoods, streets, and homes were created equal. Renting doesn't mean you can't have the home of your dreams.</b></p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 spacing">
+          <div class="boxbackground">
+            <p><b>Not all neighborhoods, streets, and homes were created equal. Renting doesn't mean you can't have the home of your dreams.</b> 
+            </p>
+          </div>
+          <img src="{% static 'about/images/homecloud.png' %}" width="280" height="200">
+        </div>
+        <div class="col-md-4 spacing">
+          <div class="boxbackground">
+            <p><b>Tell us what home you'd like to rent. We'll buy the home and become your landpal. All in less than 30 days.</b></p>
+          </div>
+          <img src="{% static 'about/images/family.png' %}" width="220" height="180" class="pic2">
+        </div>
+        <div class="col-md-4 spacing">
+          <div class="boxbackground">
+            <p><b>Looking to rent in the suburbs? Vastly expand your options by considering the stock of homes for sale, and get exactly what you're looking for.</b></p> 
+          </div>
+          <img src="{% static 'about/images/map.PNG' %}" width="220" height="200">
+        </div>
       </div>
-      <div class="clearfix"></div> <br><br>
-      <div class="notebox second"><br><br><br><br>
-      	<p class="dotted"> <b>Tell us what home you'd like to rent. We'll buy the home and become your landpal. All in less than 30 days.</b></p>
-      </div>
-      <div class="picturehere">
-      	<img src="{% static 'about/images/family.png' %}" class="pic2">
-      </div>
-      <div class="clearfix"></div>
-      <div class="picturehere">
-      	<img src="{% static 'about/images/map.PNG' %}" class="pic3">
-      </div>
-      <div class="notebox third"><br><br><br><br><br>
-      	<p class="dotted"><b>Looking to rent in the suburbs? Vastly expand your options by considering the stock of homes for sale, and get exactly what you're looking for.</b></p>
-      </div>
-      <div class="clearfix"></div>
-
-
-      <a href="/" class="btn btn-lg btn-primary btn-center">Get Started</a>
-    </div> <!-- /container -->
+    </div>
+    <a href="/" class="btn btn-lg btn-primary btn-center">Get Started</a>
+  </body>
 
 <footer class="my-5 pt-5 text-muted text-center text-small">
   <p class="mb-1">&copy; 2020 RBCo</p>
@@ -90,5 +89,4 @@
  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
 </html>

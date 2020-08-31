@@ -47,8 +47,6 @@ body {
 .cover-container {
   max-width: 60em;
 }
-
-
 /*
  * Header
  */
@@ -59,8 +57,7 @@ body {
 .masthead-brand {
   margin: auto;
   margin-top: -12rem;
-  margin-left: -3rem;
-  scale: 80%;
+  margin-left: -2.5rem;
 }
 
 .nav-masthead .nav-link {
@@ -126,18 +123,3 @@ body {
 .mastfoot {
   color: rgba(255, 255, 255, .5);
 }
-
-.bottom {
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
-  font-size: 14px;
-}
-
-.bottom2 {
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
-  font-size: 14px;
-}
-

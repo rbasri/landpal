@@ -31,7 +31,7 @@
   
   <!-- Custom styles for this template -->
   <link rel="stylesheet" href="{% static 'blog/css/bloghomestyles.css' %}" media="screen and (min-device-width: 600px)">
-  <link rel="stylesheet" href="{% static 'blog/css/bloghomestylesmobile.css' %}" media="screen and (max-device-width: 600px)">
+  <link rel="stylesheet" href="{% static 'contact/css/contactstyles.css' %}" media="screen and (max-device-width: 600px)">
 
 </head>
 
@@ -47,16 +47,15 @@
         <a class="nav-link active" href="/blog">Blog</a>
       </nav>
     </div>
-    <div class="logo">
-      <img src="{% static '/homepage/images/landpal_logo.png' %}" width="390" height="180">
-    </div> 
   </header>
 
   <!-- Page Content -->
-  <div class="container mainstuff">
-
-    <div class="">
-      <h1 class="heading"> Coming Soon </h1>
+  <div class="py-5 text-center">
+    <a href="{% url 'homepage:index' %}">
+    <img class= "d-block mx-auto mb-4" src="{% static 'homepage/images/landpal_logo.png' %}" width="390" height="180">
+    </a>
+  </div> <br><br>
+  <h3 class="left heading"> Coming Soon.</h3>
 
       <!-- Blog Entries Column -->
 <!--       <div class="">

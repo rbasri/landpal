@@ -13,18 +13,10 @@
   }
 }
 
-.titlefont1 {
+.titlefont {
   color: white;
   text-shadow: .5px .5px;
-  font-size: 36px;
-  text-align: center;
-}
-
-.titlefont2 {
-  color: white;
-  text-shadow: .5px .5px;
-  font-size: 15px;
-  font-style: oblique;
+  font-size: 35px;
 }
 .color {
   background-color: lightslategray;
@@ -77,11 +69,11 @@
   }
 }
 
-/*img {
+img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}*/
+}
 
 .col-center {
   text-align: center;
@@ -90,67 +82,62 @@
 .jumbotron {
   padding-top: 72px;
   margin-top: -3rem;
-  display: inline-block;
 }
 
-.title-center {
+.titlefont1 {
+  color: white;
+  text-shadow: .5px .5px;
+  font-size: 36px;
   text-align: center;
-  font-size: 22px;
 }
 
-/*.btn-center {
+.titlefont2 {
+  color: white;
+  text-shadow: .5px .5px;
+  font-size: 15px;
+  font-style: oblique;
+}
+
+.btn-center {
   width: 30%;
   margin-left: 35%;
   font-size: 14px;
+  margin-top: 3rem;
 }
 
-.pic1 {
+.my-list-container {
+  width: 80%;
+  margin: auto;
+  /*text-align: justify;*/
 }
 
-.first {
-  margin-top: -25rem;
+.list-font {
+  font-size: 14px;
 }
 
-.dotted {
+.my-list {
+    background-color: rgb(245,245,245);
+    width: 90%;
+    margin: auto;
+}
+
+p {
+  text-align: center;
+}
+
+.boxbackground{
   border-style: dashed;
   border-width: thin;
-  padding: 1rem;
 }
 
-.pic2 {
+.spacing {
+  margin-top: 3rem;
+}
+
+img {
+  margin-top: 1rem;
+}
+
+.spacing2 {
   padding-bottom: 3rem;
-}
-
-.second {
-  margin-top: -5rem;
-}
-
-.btn {
-  font-size: 16px;
-  margin-top: 2rem;
-}
-
-.pic3 {
-  scale: 75%;
-}
-
-.third {
-  margin-top: -6rem;
-}
-
-.container1 {
-  margin-top: 10rem;
-  display: block;
-}
-
-.clearfix {
-  clear: both;
-}*/
-
-.first {
-  position: fixed;
-  margin-top: 500px;
-  clear: both;
-  display: inline-block;
-
 }

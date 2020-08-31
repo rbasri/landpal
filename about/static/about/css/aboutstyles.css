@@ -27,7 +27,6 @@
 }
 
 .color {
-  /*background-color: rgb(0,0,128);*/
   background-color: lightslategray;
 }
 
@@ -101,49 +100,15 @@ img {
 .btn-center {
   width: 30%;
   margin-left: 35%;
+  margin-top: 5rem;
 }
 
-.picturehere {
-  width: 55%;
-  margin-right: 2%;
-  float: left;
-}
-
-.picturehere img {
-  width: 100%;
-}
-
-.notebox {
-  width: 30%;
-  float: left;
-}
-
-.clearfix {
-  clear: both;
-}
-
-.dotted {
+.boxbackground {
   border-style: dashed;
   border-width: thin;
   padding: 1rem;
 }
 
-.second {
-  margin-left: 8rem; 
-}
-
 .pic2 {
-  scale: 60%;
-  margin-top: -5rem;
-  margin-left: -3rem;
-}
-
-.pic1 {
-  scale: 90%;
-}
-
-.pic3 {
-  scale: 70%;
-  margin-left: 3rem;
-  margin-top: -3rem;
+  margin-top: 2rem;
 }
