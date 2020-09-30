@@ -55,7 +55,8 @@
   	</a>
   </div> 
 
-  <h3 class="lead-heading"> Your monthly rent at {{ quote.address }}: ${{ quote.rentquote }}/month </h3>
+  <h3 class="lead-heading"> Your monthly rent at {{ quote.address }}: <b>${{ quote.rentquote }}/month</b> </h3>
+  <h5> AND you could qualify for a free month!</h5>
   <hr>
   <h4> ...What's next? </h4> <br>
 
@@ -74,14 +75,14 @@
             <h2 class="col-center list-heading-text">2. Sign Contingent Lease</h2>
             <p>We'll have your leasing paperwork ready to go.</p>
           </div>
-          <img class="pic handshake" src="{% static 'rfq/images/handshake.png' %}" width="220" height="220">
+          <img class="handshake" src="{% static 'rfq/images/handshake.png' %}" width="220" height="220">
         </div>
         <div class="col-md-4 bordered">
           <div class="boxbackground">
             <h2 class="col-center list-heading-text">3. Close and Move In!</h2>
             <p>If the home seller accepts our offer, we'll take care of all the closing headaches and get you moving into the rental home of your dreams!</p> 
           </div>
-          <img class="pic" src="{% static 'rfq/images/moving.png' %}" width="200" height="200">
+          <img class="pic3" src="{% static 'rfq/images/moving.png' %}" width="200" height="200">
         </div>
       </div>
   </div>
@@ -92,7 +93,7 @@
   {% csrf_token %}
     <input type="hidden" name="quote_id" value="{{ quote.id }}"/> 
     <div class="btn-middle">
-      <button class="btn btn-primary" type="submit">Proceed</button> 
+      <button class="btn btn-primary" type="submit">Let's Go!</button> 
     </div>
   </form>
 

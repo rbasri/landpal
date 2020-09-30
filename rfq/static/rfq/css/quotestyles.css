@@ -26,7 +26,7 @@
   background-color: transparent;
   border-bottom: .25rem solid transparent;
 }
-
+ 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
   border-bottom-color: gray;
@@ -77,10 +77,19 @@
 
 .handshake {
   margin-top: 2rem;
+  margin-left: 2rem;
 }
 
 .bordered {
   border-style: dashed;
   border-width: thin;
   padding: 1rem;
+}
+
+.pic {
+  margin-left: 1rem;
+}
+
+.pic3 {
+  margin-left: 3rem;
 }

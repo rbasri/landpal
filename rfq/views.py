@@ -8,7 +8,7 @@ import requests
 # Create your views here.
 
 def index(request):
-	development = True
+	development = False
 	try:
 		if not development:
 			address = request.POST['address']
