@@ -20,7 +20,7 @@ def index(request):
 
 			headers = {
 			    'x-rapidapi-host': "realty-mole-property-api.p.rapidapi.com",
-			    'x-rapidapi-key': "4a95afc0d3msh00751896ba73589p1b4dabjsn6d6e76553bad"
+			    'x-rapidapi-key': ""
 			}
 
 			response = requests.request("GET", url1, headers=headers, params=querystring1)
